@@ -62,7 +62,7 @@ public class RationalTest {
         Rational y = new Rational();
         y.numerator = 3;
         y.denominator = 6;
-        x.divide(y);
+        x.equals(y);
         Assert.assertEquals(false, x.equals(y));
     }
 
@@ -74,8 +74,8 @@ public class RationalTest {
         Rational y = new Rational();
         y.numerator = 23;
         y.denominator = 8;
-        x.divide(y);
-        Assert.assertEquals(-1, x.compareTo(y));
+        x.compareTo(y);
+        Assert.assertEquals(1, x.compareTo(y));
     }
 
     @Test
